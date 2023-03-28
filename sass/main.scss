@@ -1,16 +1,17 @@
-//////////  BASE
-
 //////////  LAYOUT
 
 @import "./layout/header";
 @import "./layout/main";
-
+@import "./layout/footer";
+@import "./layout/article";
 //////////  BASE
 
 @import "./base/base";
 @import "./base/typography";
 
 //////////  COMPONENTS
+
+@import "./components/to-start";
 
 //////////  ABSTRACTS
 
