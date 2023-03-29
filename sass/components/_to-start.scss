@@ -21,3 +21,9 @@
     transform: rotate(270deg);
   }
 }
+
+@media only screen and (max-width: 40.62em) {
+  .to-start {
+    display: none;
+  }
+}

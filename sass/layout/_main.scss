@@ -59,6 +59,7 @@
         border-radius: 2rem;
         margin: 0 auto;
         cursor: pointer;
+        white-space: nowrap;
         font-family: $font-medium;
         font-size: 1.5rem;
         letter-spacing: 0.5px;
@@ -70,5 +71,21 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 68.75em) {
+  .main__item-info-button {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .main__item {
+    flex-direction: column;
+  }
+
+  .main__item-image {
+    width: 80%;
   }
 }

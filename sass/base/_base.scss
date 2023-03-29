@@ -13,3 +13,39 @@ body {
   box-sizing: border-box;
   position: relative;
 }
+
+@media only screen and (min-width: 121.25em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media only screen and (min-width: 106.25em) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 53%;
+  }
+}
+
+@media only screen and (max-width: 40.62em) {
+  html {
+    font-size: 48%;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  html {
+    font-size: 43%;
+  }
+}

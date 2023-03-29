@@ -1,0 +1,129 @@
+@import "../abstracts/variables";
+
+.specifications {
+  padding-top: 5rem;
+  margin-bottom: 5rem;
+  padding-bottom: 2rem;
+
+  &__container {
+    width: $content-width;
+    margin: 0 auto;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 2px;
+  }
+
+  &__heading {
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    padding: 1.5rem 3rem;
+    border-radius: 3px 3px 0 0;
+
+    &:not(.specifications__heading--selected):hover {
+      background-color: rgb(236, 234, 234);
+    }
+
+    &--selected {
+      position: relative;
+      top: 1px;
+      background-color: white;
+      border-top: 1px solid rgb(223, 222, 222);
+      border-left: 1px solid rgb(223, 222, 222);
+      border-right: 1px solid rgb(223, 222, 222);
+      border-bottom: 1px solid white;
+    }
+  }
+
+  &__content {
+    border: 1px solid rgb(223, 222, 222);
+    padding: 3rem;
+    border-radius: 2px;
+  }
+
+  &__details {
+    display: flex;
+    gap: 0.5rem;
+
+    &-underline {
+      width: 100%;
+      height: 2rem;
+    }
+
+    &-props {
+      flex-basis: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    &-more {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      color: rgb(113, 157, 11);
+      font-family: inherit;
+      font-size: 1.6rem;
+      text-align: start;
+      transition: all 0.2s;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &-prop {
+      position: relative;
+      white-space: nowrap;
+
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: -2;
+        bottom: 3px;
+        left: 0;
+        border-bottom: 1px dashed rgb(193, 191, 191);
+        height: 0;
+        width: 100%;
+      }
+
+      &--text {
+        color: rgb(94, 94, 94);
+        position: relative;
+        padding: 0.5rem;
+        background-color: white;
+      }
+    }
+
+    &-values {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media only screen and (max-width: 40.62em) {
+  .specifications__content {
+    font-size: 1.2rem;
+  }
+
+  .specifications__heading {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .specifications__content {
+    font-size: 1rem;
+  }
+}
