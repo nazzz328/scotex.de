@@ -210,6 +210,15 @@
   .reviews__icon {
     margin-top: 5px;
   }
+
+  .reviews__text {
+    max-height: 8rem;
+    -webkit-line-clamp: 3;
+  }
+
+  .reviews__text-trunk {
+    -webkit-line-clamp: unset;
+  }
 }
 
 @media only screen and (max-width: 40.62em) {
