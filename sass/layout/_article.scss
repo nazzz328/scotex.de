@@ -390,11 +390,11 @@
 @media only screen and (max-width: 68.75em) {
   .article {
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   .article__cta {
-    max-width: 60%;
+    max-width: 40%;
+    margin-left: auto;
   }
 }
 
@@ -415,5 +415,20 @@
 
   .article__arrow-down {
     transform: rotate(0);
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .article {
+    flex-direction: column;
+  }
+
+  .article__cta {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .article__gallery-main-image {
+    width: 30rem;
   }
 }

@@ -226,6 +226,7 @@
 @media only screen and (max-width: 50em) {
   .header__nav-list {
     justify-content: center;
+    margin-bottom: 2rem;
   }
   .header__nav-item {
     width: calc((100% - 8rem) / 4);
@@ -247,5 +248,17 @@
 
   .header__nav-item {
     padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .header__search-input-area {
+    width: 100%;
+    margin: 0 auto;
+    margin: 2rem 0;
+  }
+
+  .header__nav-link {
+    font-size: 1.4rem;
   }
 }

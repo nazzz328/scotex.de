@@ -124,6 +124,11 @@
 
 @media only screen and (max-width: 31.25em) {
   .specifications__content {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    padding: 2rem 1rem;
+  }
+
+  .specifications__details-more {
+    font-size: 1.2rem;
   }
 }
